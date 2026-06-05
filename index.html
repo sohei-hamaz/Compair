@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Compair どっちが安い？計算機</title>
+</head>
+<body>
+    <h1>Compair</h1>
+    <p>2つの商品の容量と価格を入力して，どちらがお得か比較できます</p>
+
+    <hr>
+
+    <!--
+     入力フォームを作成する
+     # には入力されたデータを処理するプログラムのある場所を入れる
+     post は入力されたデータを本文としてサーバのプログラムへ送信する
+    -->
+    <form action="#" method="post">
+        <h3>商品A</h3>
+        <label for="capacity">容量：</label>
+        <input type="number" id="capacityA" name="capacity"><br>
+        <label for="price">価格：</label>
+        <input type="number" id="priceA" name="price">
+
+        <hr>
+
+        <h3>商品B</h3>
+        <label for="capacity">容量：</label>
+        <input type="number" id="capacityB" name="capacity"><br>
+        <label for="price">価格：</label>
+        <input type="number" id="priceB" name="price">
+
+        <hr>
+
+        <button type="button" id="calcBtn">計算</button>
+        <button type="reset" id="clearBtn">クリア</button>
+    </form>
+
+    <br>
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
